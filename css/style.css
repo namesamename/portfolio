@@ -1,30 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@0;1&display=swap');
-@import url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff');
-
-
+:root{font-size: 10px;}
 
 /* layout */
 body{box-sizing: border-box;}
-.container{width: 100%; padding: 3% 5%; box-sizing: border-box; overflow: hidden;}
+.container{width: 100%; height: 100%; padding: 3% 7%; box-sizing: border-box; overflow: hidden;}
 .italic{font-style: italic;}
 
 /* header */
-#header{width: 100vw; height: 100vh;}
-#header .container{height: 100%; padding-top: 4%;}
+#header{width: 100vw; height: 100vh; background: #fff;}
+#header .container{padding-top: 4%;}
 
-.bg{width: 100%; height: 80%; margin-bottom: 5%; overflow: hidden;}
+.bg{width: 100%; height: 80%; margin-bottom: 5%;}
 
 .title{position: relative;}
 .title1{float: left;}
 .title2{float: right;}
 .title3{float: left;}
 
-.bg h1{font-size: 250px; text-transform: uppercase; line-height: 0.9;}
-.bg h1.front{position: absolute; top: -18px; left: -24px;}
+.bg h1{font-size: 25rem; text-transform: uppercase; line-height: 0.9;}
+.bg h1.front{position: absolute; top: -1.8rem; left: -2.4rem;}
 .bg h1.border{color: #fff; text-shadow: -1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000, 0 -1px 2px #000;}
 
 
 
-.header{display: flex; justify-content: space-between; width: 100%; height: 20%; font-size: 35px;}
-.header .project-btn{}
-.header .about-btn{}
+.header{display: flex; justify-content: space-between; align-items: center; width: 100%; height: 15%; font-size: 3.5rem;}
+/* .header .project-btn{}
+.header .about-btn{} */
+
+
+
+/* main */
+#main{width: 100vw; height: 300vh; background: #000; position: relative;}
+#project{float: right; width: 95%; height: 100vh; position: relative;}
+
+.scroll{width: 1px; height: 100%; background: #ddd; position: absolute; top: 0; left: 5%;}
+
+.pj-info{display: flex; justify-content: space-between; width: 100%; height: 3rem; font-size: 2.4rem; padding: 1rem 0.5rem; border-top: 1px solid #ddd; color: #fff;}
+
+.pj-main{width: 100%; height: 100%; overflow: hidden;}
+
+.pj-planet .pj-link{width: 60rem; height: 60rem; background: rgba(255,255,255,0.5); border-radius: 100%; position: absolute; top: 50%; right: 12%; transform: translateY(-50%); overflow: hidden;}
+.pj-planet .pj-link:hover{background: rgba(255,255,255,0); transition: 0.3s ease-in-out;}
+
+.pj-title{position: absolute; top: 45%; left: 0;}
+.pj-title .title{font-size: 15rem; color: #fff; line-height: 1.5; position: relative; padding-left: 8rem;}
+.project1 .pj-title .title{letter-spacing: -0.5rem;}
+.project2 .pj-title .title{letter-spacing: 0.5rem;}
+.pj-title .title .num{font-size: 2.4rem; letter-spacing: -0.2rem; position: absolute; top: 5rem; left: 0;}
+.pj-title .sub{font-size: 1.8rem; color: #fff; line-height: 2.0; position: relative; margin-left: 15.5rem;}
+.pj-title .sub::before{content: ""; display: inline-block; width: 5rem; height: 0.1rem; background: #ddd; position: absolute; top: 50%; left: -7rem; transform: translateY(-50%);}
