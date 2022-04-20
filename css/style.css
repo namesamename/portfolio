@@ -2,49 +2,56 @@
 
 /* layout */
 body{box-sizing: border-box;}
-.container{width: 100%; height: 100%; padding: 3% 7%; box-sizing: border-box; overflow: hidden;}
+.container{width: 100%; height: 100%; box-sizing: border-box; overflow: hidden;}
 .italic{font-style: italic;}
+.title{text-transform: uppercase;}
 
 /* header */
-#header{width: 100vw; height: 100vh; background: #fff;}
-#header .container{padding-top: 4%;}
+#cover{height: 120vh; background: #fff;}
+#cover .container{padding: 4% 7% 15%;}
 
-.bg{width: 100%; height: 80%; margin-bottom: 5%;}
+#cover .titles{width: 100%; height: 80%; margin-bottom: 5%;}
+#cover .titles h1{font-size: 20rem; text-transform: uppercase; line-height: 0.9;}
 
-.title{position: relative;}
-.title1{float: left;}
-.title2{float: right;}
-.title3{float: left;}
-
-.bg h1{font-size: 25rem; text-transform: uppercase; line-height: 0.9;}
-.bg h1.front{position: absolute; top: -1.8rem; left: -2.4rem;}
-.bg h1.border{color: #fff; text-shadow: -1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000, 0 -1px 2px #000;}
+#cover .title1{background: url(../img/star03.svg) no-repeat 94% 40% / 8%;}
+#cover .title2{text-align: right; background: url(../img/star02.svg) no-repeat 6% 70% / 7%;}
+#cover .title3{padding-top: 80px; background: url(../img/star01.svg) no-repeat 98% 100% / 6%}
+#cover .title3 .border{font-size: 24rem; color: #fff; text-shadow: -1px 0 2px #000, 0 1px 2px #000, 1px 0 2px #000, 0 -1px 2px #000; text-align: center; position: relative; width: max-content; margin: 0 auto;}
+#cover .title3 .border:after{content: "lee jieun"; text-shadow: none; position: absolute; top: -1.8rem; left: -2.2%; color: #000;}
 
 
+#cover .header{display: flex; justify-content: space-between; align-items: center; width: 100%; height: 15%; font-size: 3.5rem;}
+#cover .header .project-btn,.contact-btn{height: 70%; background: url(../img/Ellipse1.svg) no-repeat center center/98%}
+#cover .header a{line-height: 275%;}
 
-.header{display: flex; justify-content: space-between; align-items: center; width: 100%; height: 15%; font-size: 3.5rem;}
-/* .header .project-btn{}
-.header .about-btn{} */
+
+/* about */
+#about{background: #fff; height: 150vh;}
+#about .container{padding: 7% 7% 15%;}
+
+#about .title{}
+#about .title h2{font-size: 20rem; text-transform: uppercase; line-height: 0.9;}
 
 
 
 /* main */
-#main{width: 100vw; height: 300vh; background: #000; position: relative;}
+#main{height: 500vh; position: relative;}
+main.on{background: #000; transition: .5s ease-in;}
+#main .container{padding: 3% 7%;}
+#main .scroll{width: 1px; height: 100%; background: #ddd; position: absolute; top: 0; left: 5%;}
+
 #project{float: right; width: 95%; height: 100vh; position: relative;}
+#project .pj-info{display: flex; justify-content: space-between; width: 100%; height: 3rem; font-size: 2.4rem; padding: 1rem 0.5rem; border-top: 1px solid #ddd; color: #fff;}
 
-.scroll{width: 1px; height: 100%; background: #ddd; position: absolute; top: 0; left: 5%;}
+#project .pj-main{width: 100%; height: 100%; overflow: hidden;}
 
-.pj-info{display: flex; justify-content: space-between; width: 100%; height: 3rem; font-size: 2.4rem; padding: 1rem 0.5rem; border-top: 1px solid #ddd; color: #fff;}
+#project .pj-planet .pj-link{width: 60rem; height: 60rem; background: rgba(255,255,255,0.5); border-radius: 100%; position: absolute; top: 50%; right: 12%; transform: translateY(-50%); overflow: hidden;}
+#project .pj-planet .pj-link:hover{background: rgba(255,255,255,0); transition: 0.3s ease-in-out;}
 
-.pj-main{width: 100%; height: 100%; overflow: hidden;}
-
-.pj-planet .pj-link{width: 60rem; height: 60rem; background: rgba(255,255,255,0.5); border-radius: 100%; position: absolute; top: 50%; right: 12%; transform: translateY(-50%); overflow: hidden;}
-.pj-planet .pj-link:hover{background: rgba(255,255,255,0); transition: 0.3s ease-in-out;}
-
-.pj-title{position: absolute; top: 45%; left: 0;}
-.pj-title .title{font-size: 15rem; color: #fff; line-height: 1.5; position: relative; padding-left: 8rem;}
-.project1 .pj-title .title{letter-spacing: -0.5rem;}
-.project2 .pj-title .title{letter-spacing: 0.5rem;}
-.pj-title .title .num{font-size: 2.4rem; letter-spacing: -0.2rem; position: absolute; top: 5rem; left: 0;}
-.pj-title .sub{font-size: 1.8rem; color: #fff; line-height: 2.0; position: relative; margin-left: 15.5rem;}
-.pj-title .sub::before{content: ""; display: inline-block; width: 5rem; height: 0.1rem; background: #ddd; position: absolute; top: 50%; left: -7rem; transform: translateY(-50%);}
+#project .pj-title{position: absolute; top: 45%; left: 0;}
+#project .pj-title .title{font-size: 15rem; color: #fff; line-height: 1.5; position: relative; padding-left: 8rem;}
+#project .project1 .pj-title .title{letter-spacing: -0.5rem;}
+#project .project2 .pj-title .title{letter-spacing: 0.5rem;}
+#project .pj-title .title .num{font-size: 2.4rem; letter-spacing: -0.2rem; position: absolute; top: 5rem; left: 0;}
+#project .pj-title .sub{font-size: 1.8rem; color: #fff; line-height: 2.0; position: relative; margin-left: 15.5rem;}
+#project .pj-title .sub::before{content: ""; display: inline-block; width: 5rem; height: 0.1rem; background: #ddd; position: absolute; top: 50%; left: -7rem; transform: translateY(-50%);}

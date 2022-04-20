@@ -17,7 +17,7 @@ body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,select,tabl
 a {color: #222; text-decoration: none;}
 
 /* 폰트 초기화 */
-body, input, textarea, select, button, table {font-family: 'Bodoni Moda', 'Chosunilbo_myungjo', sans-serif; color: #222; font-size: 16px; line-height: 1;}
+body, input, textarea, select, button, table {font-family: 'Bodoni Moda', 'Chosunilbo_myungjo', sans-serif; color: #000; font-size: 16px; line-height: 1;}
 
 /* 폰트 스타일 초기화 */
 em,address {font-style: normal;}
@@ -38,7 +38,7 @@ button {border: 0;}
 video,img {width: 100%;}
 
 /* clearfix */
-.cf{*zoom:1;}
+/* .cf{*zoom:1;} */
 .cf:after {display: block; content: ''; clear: both;}
 
 
