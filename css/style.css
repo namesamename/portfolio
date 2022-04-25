@@ -7,6 +7,7 @@ body.on{background: #000; color: #fff;}
 .italic{font-style: italic;}
 .title{text-transform: uppercase;}
 
+
 /* header */
 #cover{height: 120vh;}
 #cover .container{padding: 4% 7% 15%;}
@@ -45,18 +46,18 @@ body.on{background: #000; color: #fff;}
 #about .info{display: flex; justify-content: space-between; height: 20%; font-size: 3rem; margin-top: 5%;}
 #about .info ul{width: 47%;}
 #about .info ul li{height: 25%; line-height: 2.5; position: relative;}
-#about .info ul li img{width: 4.2%; position: absolute; top: 35%; left: 1%;}
+#about .info ul li>img{width: 4.2%; position: absolute; top: 35%; left: 1%;}
+#about .info ul li span{height: auto;}
 #about .info ul li:hover img{transform: rotateY(180deg); transition: .5s ease-in-out;}
 
 #about .info-l li:not(:last-child){border-bottom: 1px solid #000;}
 #about .info-l li{display: flex; justify-content: space-between; letter-spacing: 1px; padding-left: 7%;}
 
-#about .info-r li:not(:nth-child(2n)){padding-left: 7%;}
-#about .info-r .right{text-align: right; border-top: 1px solid #000;}
-
-
-
-
+#about .info-r li:not(:first-child){display: flex; justify-content: space-between;}
+#about .info-r li:first-child{padding-left: 7%; border-bottom: 1px solid #000;}
+#about .info-r li span{display: inline-block; flex: 1;}
+#about .info-r li span img{width: 22%; height: 50%;}
+/* #about .info-r li:not(:nth-child(2n)){padding-left: 7%;} */
 
 
 /* main */
@@ -85,8 +86,6 @@ body.on{background: #000; color: #fff;}
 #project .pj-planet .pj-link a.on{transform: scale(1); transition: 1.5s ease-in-out;}
 #project .pj-planet .pj-link a:hover{filter: grayscale(0); opacity: 0.9; transition: 0.5s;}
 
-
-
 #project .pj-title{position: absolute; top: 45%; left: 0;}
 #project .pj-title .title{font-size: 15rem; color: inherit; line-height: 1.5; position: relative; padding-left: 8rem;}
 #project .project1 .pj-title .title{letter-spacing: -0.5rem;}
@@ -94,6 +93,14 @@ body.on{background: #000; color: #fff;}
 #project .pj-title .title .num{font-size: 2.4rem; letter-spacing: -0.2rem; position: absolute; top: 5rem; left: 0;}
 #project .pj-title .sub{font-size: 1.8rem; color: inherit; line-height: 2.0; position: relative; margin-left: 15.5rem;}
 #project .pj-title .sub::before{content: ""; display: inline-block; width: 5rem; height: 0.1rem; background: #ddd; position: absolute; top: 50%; left: -7rem; transform: translateY(-50%);}
+
+
+/* contact */
+
+
+
+
+
 
 
 
