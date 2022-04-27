@@ -96,8 +96,8 @@ body.on{background: #000; color: #fff;}
 
 
 /* contact */
-
-
+#contact{height: 150vh;}
+#contact .container{padding: 3% 7% 15%;}
 
 
 

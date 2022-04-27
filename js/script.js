@@ -1,6 +1,7 @@
 $(window).scroll(function(){
     let sct=$(this).scrollTop();
     let offTop1=$('#main').offset().top;
+    let offTop4=$('#contact').offset().top;
 
     if(sct>offTop1-1000){
         $('body').addClass('on')
@@ -11,6 +12,9 @@ $(window).scroll(function(){
         $('.scroll').addClass('on')
     }else{
         $('.scroll').removeClass('on')
+    }
+    if(sct>offTop4-200){
+        $('body').removeClass('on')
     }
 
     $('.pj-info').each(function(){
