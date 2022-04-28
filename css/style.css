@@ -96,9 +96,14 @@ body.on{background: #000; color: #fff;}
 
 
 /* contact */
-#contact{height: 150vh;}
-#contact .container{padding: 3% 7% 15%;}
+#contact{height: 100vh;}
+#contact .container{padding: 10% 7%; position: relative;}
+#contact a{color: inherit;}
 
+#contact .contact{font-size: 15rem; background: #000; color: #fff; text-align: right; text-transform: uppercase; padding: 0 1% 0 30%; transform: rotate(-5deg); position: absolute; top: 25%; left: -100%;}
+
+#contact .con-infos{background: #000; color: #fff; padding: 0.5% 45% 0.5% 2%; transform: rotate(7deg); position: absolute; top: 65%; right: -100%;}
+#contact .con-info li{font-size: 4.5rem; line-height: 1.5;}
 
 
 
@@ -157,4 +162,23 @@ body.on{background: #000; color: #fff;}
     #cover .container{padding: 25% 3% 30%; background-size: 18%;}
     #cover .titles h1{font-size: 8rem;}
     #cover .title3 .border{font-size: 9rem;}
+}
+
+@media screen and (max-width: 515px) {
+    #cover .titles h1{font-size: 7rem;}
+    #cover .title3 .border{font-size: 8rem;}
+}
+
+@media screen and (max-width: 450px) {
+    #cover .container{padding-bottom: 40%;}
+    #cover .title1, #cover .title2, #cover .title3{transform: rotate(45deg);  text-align: center;}
+    #cover .titles h1{font-size: 6rem; line-height: 2.0;}
+    #cover .title3 .border{font-size: 7rem;}
+}
+
+@media screen and (max-width: 385px) {
+    #cover .container{padding-bottom: 55%;}
+    #cover .titles h1{font-size: 5rem;}
+    #cover .title3 .border{font-size: 6rem;}
+    #cover .header{font-size: 2.2rem}
 }
