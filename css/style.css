@@ -120,6 +120,8 @@ body.on{background: #000; color: #fff;}
     #cover .container{padding: 7% 7% 20%;}
     #cover .titles h1{font-size: 16rem;}
     #cover .title3 .border{font-size: 19rem;}
+
+    #about .title h2{font-size: 18rem;}
 }
 
 @media screen and (max-width: 1300px) {
@@ -127,6 +129,8 @@ body.on{background: #000; color: #fff;}
     #cover .titles h1{font-size: 14rem;}
     #cover .title3 .border{font-size: 17rem;}
     #cover .header{font-size: 2.8rem;}
+
+    #about .title h2{font-size: 15rem;}
 }
 
 @media screen and (max-width: 1150px) {
@@ -139,6 +143,8 @@ body.on{background: #000; color: #fff;}
     #cover .title3 .border{font-size: 15rem;}
     #cover .header{font-size: 2.5rem;}
     #cover .header .project-btn, .contact-btn{height: 58%;}
+
+    #about .title h2{font-size: 14rem;}
 }
 
 @media screen and (max-width: 855px) {
@@ -146,6 +152,8 @@ body.on{background: #000; color: #fff;}
     #cover .titles h1{font-size: 10rem;}
     #cover .title3 .border{font-size: 13rem;}
     #cover .header .project-btn, .contact-btn{height: 58%;}
+
+    #about .title h2{font-size: 12rem;}
 }
 
 @media screen and (max-width: 720px) {
@@ -156,6 +164,9 @@ body.on{background: #000; color: #fff;}
     #cover .title3{padding-top: 2rem;}
     #cover .title3 .border{font-size: 11rem;}
     #cover .header{width: 35%; height: auto; margin: 0 auto; flex-wrap: wrap; justify-content: space-around;}
+
+    #about .title .tit-t{text-align: center; font-size: 15rem;}
+    #about .title .tit-b{display: none;}
 }
 
 @media screen and (max-width: 655px) {

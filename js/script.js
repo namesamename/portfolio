@@ -33,7 +33,7 @@ $(window).scroll(function(){
         $('#about').find('.tit-b').stop().animate({right: 0, left: 0},1500);
     }else{
         $('#about').find('.tit-t').stop().animate({right: '-100%'},1500);
-        $('#about').find('.tit-b').stop().animate({right: '-100%', left: '120%'},1500);
+        $('#about').find('.tit-b').stop().animate({right: '-100%', left: '110%'},1500);
     }
 
     let offTop4=$('#contact').offset().top;
