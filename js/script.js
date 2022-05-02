@@ -1,8 +1,10 @@
 let winW=$(window).width();
+let newScr=$(window).scrollTop();
+let oldScr=newScr;
 
 $(window).scroll(function(){
     let sct=$(this).scrollTop();
-
+    
     let offTop1=$('#main').offset().top;
     if(winW<800){
         if(sct>offTop1-400){
@@ -19,9 +21,16 @@ $(window).scroll(function(){
     }
     if(sct>offTop1){
         $('.scroll').addClass('on');
+        $('#main .top-btn').show();
     }else{
         $('.scroll').removeClass('on');
+        $('#main .top-btn').hide();
     }
+
+    
+    newScr=$(window).scrollTop();
+    
+    oldScr=newScr;
 
     $('.pj-info').each(function(){
         let offTop2=$(this).offset().top;
@@ -59,16 +68,23 @@ $(window).scroll(function(){
     }
 
     let offTop4=$('#contact').offset().top;
+    
     if(sct>offTop4-200){
         $('body').removeClass('on');
         $('.scroll').removeClass('on');
         $('.contact').stop().animate({left: '-5%'},1500);
         $('.info-t').stop().animate({right: '-5%'},1500);
         $('.info-b').stop().animate({left: '-5%'},1500);
+        $('#contact .top-btn').show();
     }else{
-        $('.contact').stop().animate({left: '-105%'},1500);
-        $('.info-t').stop().animate({right: '-105%'},1500);
-        $('.info-b').stop().animate({left: '-105%'},1500);
+        $('.contact').stop().animate({left: '-150%'},1500);
+        $('.info-t').stop().animate({right: '-150%'},1500);
+        $('.info-b').stop().animate({left: '-150%'},1500);
+        $('#contact .top-btn').hide();
     }
+
+    $('.top-btn').click(function(){
+        $('html, body').stop().animate({scrollTop: $('#cover').offset().top},700);
+    });
 });
 

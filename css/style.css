@@ -7,6 +7,7 @@ body.on{background: #000; color: #fff;}
 .container{width: 100%; height: 100%; box-sizing: border-box; overflow: hidden;}
 .italic{font-style: italic;}
 .title{text-transform: uppercase;}
+.top-btn{width: 4%; position: fixed; bottom: 3%; right: 2%; display: none;}
 
 
 /* header */
@@ -63,6 +64,7 @@ body.on{background: #000; color: #fff;}
 /* main */
 #main{height: 600vh; position: relative;}
 #main .container{padding: 3% 7%;}
+
 #main .scroll{width: 0.1rem; height: 100%; background: #ddd; position: absolute; top: 0; left: 5%; opacity: 0; transition: .5s ease-in-out;}
 #main .scroll.on{opacity: 1;}
 
@@ -98,6 +100,7 @@ body.on{background: #000; color: #fff;}
 
 /* contact */
 #contact{height: 100vh;}
+#contact .top-btn{z-index: 999;}
 #contact .container{padding: 10% 7%; position: relative;}
 #contact a{color: inherit;}
 
@@ -154,20 +157,20 @@ body.on{background: #000; color: #fff;}
     #project .pj-info{font-size: 2rem;}
     #project .pj-planet .pj-link{width: 40rem; height: 40rem;}
     #project .pj-title .title{font-size: 11rem;}
-    #project .pj-title .sub{font-size: 1.4rem;}
 
     #contact .contact{font-size: 12rem;}
     #contact .con-info{font-size: 3.5rem;}
 }
 
 @media screen and (max-width: 1150px) {
+    .top-btn{width: 5%;}
+
     #cover .container{padding: 12% 7% 30%;}
     #cover .title1, #cover .title2, #cover .title3{background: none;}
 
     #project .pj-info{font-size: 1.8rem;}
     #project .pj-planet .pj-link{width: 35rem; height: 35rem;}
     #project .pj-title .title{font-size: 10rem;}
-    #project .pj-title .sub{font-size: 1.2rem;}
 
     #contact .contact{font-size: 10.5rem;}
     #contact .con-info{font-size: 3rem;}
@@ -192,6 +195,8 @@ body.on{background: #000; color: #fff;}
 }
 
 @media screen and (max-width: 855px) {
+    .top-btn{width: 6%;}
+
     #cover .container{padding: 17% 7% 40%;}
     #cover .titles h1{font-size: 10rem;}
     #cover .title3 .border{font-size: 13rem;}
@@ -221,14 +226,17 @@ body.on{background: #000; color: #fff;}
 }
 
 @media screen and (max-width: 720px) {
+    .top-btn{width: 7%;}
+
     #cover, #about{height: 100vh;}
+    #cover{background: url(../img/svg/star03.svg) no-repeat 17% 70%;}
     #cover .container{padding: 20% 3% 0%; background: url(../img/svg/star01.svg) no-repeat 85% 8%;}
     #cover .titles{height: 60%; padding-top: 7%; padding-bottom: 10%;}
     #cover .titles h1{line-height: 1.5;}
     #cover .title1, #cover .title2, #cover .title3{transform: rotate(40deg);  text-align: center;}
     #cover .title3{padding-top: 2rem;}
     #cover .title3 .border{font-size: 11rem;}
-    #cover .header{width: 35%; height: auto; margin: 5% auto 0; flex-wrap: wrap; justify-content: space-around;}
+    #cover .header{width: 35%; height: auto; margin: 25% auto 0; flex-wrap: wrap; justify-content: space-around;}
 
     #about .container{padding: 12% 5% 5%;}
     #about .title{height: 35%;}
@@ -246,6 +254,9 @@ body.on{background: #000; color: #fff;}
 }
 
 @media screen and (max-width: 655px) {
+    .top-btn{width: 8%;}
+
+    #cover{background-size: 16%; background-position-y: 60%;}
     #cover .container{padding: 25% 3% 0%; background-size: 18%;}
     #cover .titles h1{font-size: 8rem;}
     #cover .title3 .border{font-size: 9rem;}
@@ -253,19 +264,20 @@ body.on{background: #000; color: #fff;}
     #about .title h2{font-size: 12rem;}
     #about .title .tit-t{width: 95%;}
 
-    #project .pj-planet{height: 70%; padding: 16% 0; background: url(../img/svg/ring-s.svg) no-repeat center center / 100%;}
-    #project .pj-planet .pj-link{width: 40rem; height: 40rem;}
-    #project .pj-title .title{font-size: 7rem; margin-bottom: 5%;}
-    #project .pj-title .sub{margin: 2% auto;}
-}
-
-@media screen and (max-width: 655px) {
-    #project .pj-planet{padding: 25% 0;}
+    #project .pj-planet{height: 70%; padding: 25% 0; background: url(../img/svg/ring-s.svg) no-repeat center center / 100%;}
     #project .pj-planet .pj-link{width: 35rem; height: 35rem;}
-    #project .pj-title .title{font-size: 6rem;}
+    #project .pj-title .title{font-size: 6rem; margin-bottom: 5%;}
+    #project .pj-title .sub{margin: 2% auto;}
+
+    #contact .contact{font-size: 8.5rem; padding-left: 15%;}
+    #contact .con-info{font-size: 2.7rem;}
+    #contact .info-t{padding-right: 25%;}
+    #contact .info-b{padding-left: 25%;}
 }
 
 @media screen and (max-width: 515px) {
+    .top-btn{width: 10%;}
+
     #cover .titles h1{font-size: 7rem;}
     #cover .title3 .border{font-size: 8rem;}
 
@@ -277,9 +289,13 @@ body.on{background: #000; color: #fff;}
     #project .pj-title .title{font-size: 6.5rem;}
     #project .pj-title .title .num{display: block; width: 100%;}
     #project .pj-title .sub{font-size: 1.8rem;}
+
+    #contact .contact{font-size: 8rem;}
+    #contact .con-info{font-size: 2.4rem;}
 }
 
 @media screen and (max-width: 470px) {
+    #cover{background-size: 20%;}
     #cover .container{padding: 33% 3% 0%; background-size: 22%;}
     #cover .title1, #cover .title2, #cover .title3{transform: rotate(45deg);  text-align: center;}
     #cover .titles h1{font-size: 6rem; line-height: 2.0;}
@@ -295,9 +311,16 @@ body.on{background: #000; color: #fff;}
     #project .pj-title .title{font-size: 5.5rem;}
     #project .pj-title .title .num{font-size: 2rem;}
     #project .pj-title .sub{font-size: 1.6rem;}
+
+    #contact .contact{font-size: 7rem; padding-left: 12%;}
+    #contact .con-info{font-size: 2.2rem;}
+    #contact .info-t{padding-right: 22%;}
+    #contact .info-b{padding-left: 22%;}
 }
 
 @media screen and (max-width: 400px) {
+    .top-btn{width: 12%;}
+
     #cover .container{padding: 40% 3% 0%;}
     #cover .titles h1{font-size: 5rem;}
     #cover .title3 .border{font-size: 6rem;}
@@ -310,4 +333,8 @@ body.on{background: #000; color: #fff;}
 
     #project .pj-planet{padding: 50% 0;}
     #project .pj-title .title{font-size: 5rem;}
+
+    #contact .contact{font-size: 6.5rem; padding-left: 5%;}
+    #contact .info-t{padding-right: 12%;}
+    #contact .info-b{padding-left: 12%;}
 }
