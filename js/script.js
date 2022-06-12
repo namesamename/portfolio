@@ -1,6 +1,4 @@
 let winW=$(window).width();
-let newScr=$(window).scrollTop();
-let oldScr=newScr;
 
 $(window).scroll(function(){
     let sct=$(this).scrollTop();
@@ -27,10 +25,11 @@ $(window).scroll(function(){
         $('#main .top-btn').hide();
     }
 
-    
-    newScr=$(window).scrollTop();
-    
-    oldScr=newScr;
+
+    let scrH=($(window).scrollTop()/($(document).height()-$(window).height()))*100;
+    // console.log(srcH);
+    $('.scr-now').stop().animate({height: scrH+'%'},1);
+
 
     $('.pj-info').each(function(){
         let offTop2=$(this).offset().top;

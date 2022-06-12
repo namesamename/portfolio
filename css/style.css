@@ -65,7 +65,9 @@ body.on{background: #000; color: #fff;}
 #main{height: 600vh; position: relative;}
 #main .container{padding: 3% 7%;}
 
-#main .scroll{width: 0.1rem; height: 100%; background: #ddd; position: absolute; top: 0; left: 5%; opacity: 0; transition: .5s ease-in-out;}
+#main .scroll{width: 0.1rem; height: 100vh; background: #666; position: fixed; top: 0; left: 5%; opacity: 0; transition: .5s ease-in-out;}
+#main .scroll .scr-now{width: 200%; height: 0%; background: #ddd; position: relative;}
+#main .scroll .scr-now::after{content: ''; position: absolute; bottom: -1%; left: -577%; width: 2.5rem; height: 2.5rem; background: url(../img/svg/scroll.svg) no-repeat center center / 100%;}
 #main .scroll.on{opacity: 1;}
 
 #project{float: right; width: 95%; height: 120vh; position: relative;}
