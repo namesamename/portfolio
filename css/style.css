@@ -95,7 +95,7 @@ body.on{background: #000; color: #fff;}
 #project .project1 .pj-title .title{letter-spacing: -0.5rem;}
 #project .project2 .pj-title .title{letter-spacing: 0.5rem;}
 #project .pj-title .title .num{font-size: 2.4rem; letter-spacing: -0.2rem; position: absolute; top: 5rem; left: 0;}
-#project .pj-title .sub{font-size: 1.8rem; color: inherit; line-height: 2.0; position: relative; margin-left: 15.5rem;}
+#project .pj-title .sub{font-size: 2.0rem; color: inherit; line-height: 2.0; position: relative; margin-left: 15.5rem;}
 #project .pj-title .sub::before{content: ""; display: inline-block; width: 5rem; height: 0.1rem; background: #ddd; position: absolute; top: 50%; left: -7rem; transform: translateY(-50%);}
 #project .pj-title .sub .bar{display: none; width: 5%; height: 0.1rem; background: #ddd; margin-right: 2%;}
 
@@ -106,12 +106,14 @@ body.on{background: #000; color: #fff;}
 #contact .container{padding: 10% 7%; position: relative;}
 #contact a{color: inherit;}
 
-#contact .contact{font-size: 15rem; background: #000; color: #fff; text-align: right; text-transform: uppercase; padding: 0 1% 0 30%; transform: rotate(-5deg); position: absolute; top: 20%; left: -105%;}
+#contact .contact{font-size: 15rem; background: #000; color: #fff; text-align: right; text-transform: uppercase; padding: 0 1% 0 30%; transform: rotate(-5deg); position: absolute; top: 12%; left: -105%;}
 
 #contact .con-info{background: #000; color: #fff; position: absolute; font-size: 4rem; line-height: 1.5; letter-spacing: 1px;}
 #contact .con-info li:nth-child(2n){border-top: 1px solid #fff;}
-#contact .info-t{top: 55%; right: -105%; transform: rotate(7deg); padding: 0.5% 45% 0.5% 2%;}
-#contact .info-b{top: 77%; left: -105%; transform: rotate(-4deg); padding: 0.5% 2% 0.5% 45%; text-align: right;}
+#contact .info-t{top: 52%; right: -105%; transform: rotate(7deg); padding: 0.5% 45% 0.5% 2%;}
+#contact .info-m{top: 69.5%; left: -105%; transform: rotate(-4deg); padding: 0.5% 2% 0.5% 45%; text-align: right;}
+#contact .info-b{top: 87%; left: -105%; transform: rotate(-13deg); padding: 0.5% 2% 0.5% 45%; text-align: right;}
+
 
 
 
@@ -134,7 +136,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-info{font-size: 2.2rem;}
     #project .pj-planet .pj-link{width: 50rem; height: 50rem;}
     #project .pj-title .title{font-size: 13rem;}
-    #project .pj-title .sub{font-size: 1.6rem;}
+    #project .pj-title .sub{font-size: 1.8rem;}
 }
 
 @media screen and (max-width: 1400px) {
@@ -222,7 +224,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-title{height: 35%; position: static; transform: none; text-align: center;}
     #project .pj-title .title{padding-left: 0; margin-bottom: 10%;}
     #project .pj-title .title .num{position: static;}
-    #project .pj-title .sub{width: 100%; margin: 3% auto; font-size: 2.2rem;}
+    #project .pj-title .sub{width: 100%; margin: 0 auto; font-size: 2.2rem;}
     #project .pj-title .sub::before{display: none;}
     #project .pj-title .sub .bar{display: inline-block;}
 }
@@ -252,7 +254,8 @@ body.on{background: #000; color: #fff;}
     #project{width: 100%; height: 100vh;}
     #project .pj-info .name{display: none;}
     #project .pj-planet .pj-link{width: 33rem; height: 33rem;}
-    #project .pj-title .title{font-size: 8rem;}
+    #project .pj-title .title{font-size: 8rem; margin-bottom: 8%;}
+    #project .pj-title .sub{font-size: 2rem;}
 }
 
 @media screen and (max-width: 655px) {
@@ -269,7 +272,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-planet{height: 70%; padding: 25% 0; background: url(../img/svg/ring-s.svg) no-repeat center center / 100%;}
     #project .pj-planet .pj-link{width: 35rem; height: 35rem;}
     #project .pj-title .title{font-size: 6rem; margin-bottom: 5%;}
-    #project .pj-title .sub{margin: 2% auto;}
+    #project .pj-title .sub{margin: 0 auto;}
 
     #contact .contact{font-size: 8.5rem; padding-left: 15%;}
     #contact .con-info{font-size: 2.7rem;}
@@ -288,7 +291,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-planet{padding: 33% 0;}
     #project .pj-planet .pj-link{width: 30rem; height: 30rem;}
     #project .pj-title{height: 30%;}
-    #project .pj-title .title{font-size: 6.5rem;}
+    #project .pj-title .title{font-size: 6.0rem;}
     #project .pj-title .title .num{display: block; width: 100%;}
     #project .pj-title .sub{font-size: 1.8rem;}
 
@@ -312,7 +315,6 @@ body.on{background: #000; color: #fff;}
     #project .pj-planet .pj-link{width: 25rem; height: 25rem;}
     #project .pj-title .title{font-size: 5.5rem;}
     #project .pj-title .title .num{font-size: 2rem;}
-    #project .pj-title .sub{font-size: 1.6rem;}
 
     #contact .contact{font-size: 7rem; padding-left: 12%;}
     #contact .con-info{font-size: 2.2rem;}
