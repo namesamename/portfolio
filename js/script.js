@@ -74,7 +74,7 @@ $(window).scroll(function(){
         $('.contact').stop().animate({left: '-5%'},1500);
         $('.info-t').stop().animate({right: '-5%'},1500);
         $('.info-m').stop().animate({left: '-20%'},1500);
-        $('.info-b').stop().animate({left: '-1%'},1500);
+        $('.info-b').stop().animate({left: '-2%'},1500);
         $('#contact .top-btn').show();
     }else{
         $('.contact').stop().animate({left: '-150%'},1500);

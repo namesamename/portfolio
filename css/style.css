@@ -220,7 +220,7 @@ body.on{background: #000; color: #fff;}
 
     #project .pj-wrap{height: 90%;}
     #project .pj-planet{height: 65%; padding: 20% 0; background-position-x: 0; background-size: 100%;}
-    #project .pj-planet .pj-link{position: static; transform: none; width: 35rem; height: 35rem; margin: 0 auto;}
+    #project .pj-planet .pj-link{/* position: static; transform: none;  */width: 35rem; height: 35rem; margin: 0 auto; top: 34%; right: 20%;}
     #project .pj-title{height: 35%; position: static; transform: none; text-align: center;}
     #project .pj-title .title{padding-left: 0; margin-bottom: 10%;}
     #project .pj-title .title .num{position: static;}
@@ -269,7 +269,7 @@ body.on{background: #000; color: #fff;}
     #about .title h2{font-size: 12rem;}
     #about .title .tit-t{width: 95%;}
 
-    #project .pj-planet{height: 70%; padding: 25% 0; background: url(../img/svg/ring-s.svg) no-repeat center center / 100%;}
+    #project .pj-planet{height: 70%; padding: 25% 0; background: url(../img/svg/ring-s.svg) no-repeat center center / 90%;}
     #project .pj-planet .pj-link{width: 35rem; height: 35rem;}
     #project .pj-title .title{font-size: 6rem; margin-bottom: 5%;}
     #project .pj-title .sub{margin: 0 auto;}
@@ -289,7 +289,7 @@ body.on{background: #000; color: #fff;}
     #about .title h2{font-size: 11rem;}
 
     #project .pj-planet{padding: 33% 0;}
-    #project .pj-planet .pj-link{width: 30rem; height: 30rem;}
+    #project .pj-planet .pj-link{width: 30rem; height: 30rem; right: 15%;}
     #project .pj-title{height: 30%;}
     #project .pj-title .title{font-size: 6.0rem;}
     #project .pj-title .title .num{display: block; width: 100%;}
@@ -311,8 +311,8 @@ body.on{background: #000; color: #fff;}
     #project .pj-info{font-size: 2.2rem; text-align: center;}
     #project .pj-info .date{width: 100%;}
     #project .pj-info .lan{display: none;}
-    #project .pj-planet{padding: 47% 0;}
-    #project .pj-planet .pj-link{width: 25rem; height: 25rem;}
+    #project .pj-planet{height: 65%; padding: 47% 0; background-size: 80%;}
+    #project .pj-planet .pj-link{width: 23rem; height: 23rem; right: 23%;}
     #project .pj-title .title{font-size: 5.5rem;}
     #project .pj-title .title .num{font-size: 2rem;}
 
@@ -336,6 +336,7 @@ body.on{background: #000; color: #fff;}
     #about .info-r li:not(:first-child){font-size: 1.8rem;}
 
     #project .pj-planet{padding: 50% 0;}
+    #project .pj-planet .pj-link{width: 21rem; height: 21rem; right: 20%;}
     #project .pj-title .title{font-size: 5rem;}
 
     #contact .contact{font-size: 6.5rem; padding-left: 5%;}
