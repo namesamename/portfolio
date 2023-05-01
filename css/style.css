@@ -86,7 +86,7 @@ body.on{background: #000; color: #fff;}
 #project .pj-planet{width: 100%; height: 100%; background: url(../img/svg/ring.svg) no-repeat 105% 50% / 68%;} 
 #project .pj-planet .pj-link{width: 60rem; height: 60rem; position: absolute; top: 50%; right: 12%; transform: translateY(-50%);}
 #project .pj-planet .pj-link:after{content: ""; width: 80rem; height: 80rem;}
-#project .pj-planet .pj-link a{display: block; width: 100%; height: 100%; border-radius: 100%; transform: scale(0.1); filter: grayscale(100%); opacity: 0.4; overflow: hidden;}
+#project .pj-planet .pj-link a{display: block; width: 100%; height: 100%; border-radius: 100%; transform: scale(0.1); filter: grayscale(50%); opacity: 0.4; overflow: hidden;}
 #project .pj-planet .pj-link a.on{transform: scale(1); transition: 1.5s ease-in-out;}
 #project .pj-planet .pj-link a:hover{filter: grayscale(0); opacity: 0.9; transition: 0.5s;}
 
