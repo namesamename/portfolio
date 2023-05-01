@@ -91,9 +91,8 @@ body.on{background: #000; color: #fff;}
 #project .pj-planet .pj-link a:hover{filter: grayscale(0); opacity: 0.9; transition: 0.5s;}
 
 #project .pj-title{position: absolute; top: 45%; left: 0;}
-#project .pj-title .title{font-size: 15rem; color: inherit; line-height: 1.5; position: relative; padding-left: 8rem;}
-#project .project1 .pj-title .title{letter-spacing: -0.5rem;}
-#project .project2 .pj-title .title{letter-spacing: 0.5rem;}
+#project .pj-title .title a{font-size: 15rem; color: inherit; line-height: 1.5; position: relative; padding-left: 8rem;}
+#project .project2 .pj-title .title a{letter-spacing: 0.5rem;}
 #project .pj-title .title .num{font-size: 2.4rem; letter-spacing: -0.2rem; position: absolute; top: 5rem; left: 0;}
 #project .pj-title .sub{font-size: 2.0rem; color: inherit; line-height: 2.0; position: relative; margin-left: 15.5rem;}
 #project .pj-title .sub::before{content: ""; display: inline-block; width: 5rem; height: 0.1rem; background: #ddd; position: absolute; top: 50%; left: -7rem; transform: translateY(-50%);}
