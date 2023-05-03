@@ -134,7 +134,7 @@ body.on{background: #000; color: #fff;}
 
     #project .pj-info{font-size: 2.2rem;}
     #project .pj-planet .pj-link{width: 50rem; height: 50rem;}
-    #project .pj-title .title{font-size: 13rem;}
+    #project .pj-title .title a{font-size: 13rem;}
     #project .pj-title .sub{font-size: 1.8rem;}
 }
 
@@ -159,7 +159,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-wrap{padding: 5% 0;}
     #project .pj-info{font-size: 2rem;}
     #project .pj-planet .pj-link{width: 40rem; height: 40rem;}
-    #project .pj-title .title{font-size: 11rem;}
+    #project .pj-title .title a{font-size: 11rem;}
 
     #contact .contact{font-size: 12rem;}
     #contact .con-info{font-size: 3.5rem;}
@@ -173,7 +173,7 @@ body.on{background: #000; color: #fff;}
 
     #project .pj-info{font-size: 1.8rem;}
     #project .pj-planet .pj-link{width: 35rem; height: 35rem;}
-    #project .pj-title .title{font-size: 10rem;}
+    #project .pj-title .title a{font-size: 10rem;}
 
     #contact .contact{font-size: 10.5rem;}
     #contact .con-info{font-size: 3rem;}
@@ -190,7 +190,7 @@ body.on{background: #000; color: #fff;}
 
     #project .pj-planet{background-position-x: 110%; background-size: 75%;}
     #project .pj-planet .pj-link{width: 33rem; height: 33rem;}
-    #project .pj-title .title{font-size: 9rem;}
+    #project .pj-title .title a{font-size: 9rem;}
 
     #contact .contact{font-size: 10rem; padding-left: 20%;}
     #contact .info-t{padding-right: 30%;}
@@ -209,7 +209,7 @@ body.on{background: #000; color: #fff;}
     #about .info{font-size: 2rem; height: 15%;}
 
     #project .pj-planet .pj-link{width: 30rem; height: 30rem;}
-    #project .pj-title .title{font-size: 8.5rem;}
+    #project .pj-title .title a{font-size: 8.5rem;}
 }
 
 @media screen and (max-width: 750px) {
@@ -221,7 +221,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-planet{height: 65%; padding: 20% 0; background-position-x: 0; background-size: 100%;}
     #project .pj-planet .pj-link{/* position: static; transform: none;  */width: 35rem; height: 35rem; margin: 0 auto; top: 34%; right: 20%;}
     #project .pj-title{height: 35%; position: static; transform: none; text-align: center;}
-    #project .pj-title .title{padding-left: 0; margin-bottom: 10%;}
+    #project .pj-title .title a{padding-left: 0; margin-bottom: 10%;}
     #project .pj-title .title .num{position: static;}
     #project .pj-title .sub{width: 100%; margin: 0 auto; font-size: 2.2rem;}
     #project .pj-title .sub::before{display: none;}
@@ -270,7 +270,7 @@ body.on{background: #000; color: #fff;}
 
     #project .pj-planet{height: 70%; padding: 25% 0; background: url(../img/svg/ring-s.svg) no-repeat center center / 90%;}
     #project .pj-planet .pj-link{width: 35rem; height: 35rem;}
-    #project .pj-title .title{font-size: 6rem; margin-bottom: 5%;}
+    #project .pj-title .title a{font-size: 6rem; margin-bottom: 5%;}
     #project .pj-title .sub{margin: 0 auto;}
 
     #contact .contact{font-size: 8.5rem; padding-left: 15%;}
@@ -290,7 +290,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-planet{padding: 33% 0;}
     #project .pj-planet .pj-link{width: 30rem; height: 30rem; right: 15%;}
     #project .pj-title{height: 30%;}
-    #project .pj-title .title{font-size: 6.0rem;}
+    #project .pj-title .title a{font-size: 6.0rem;}
     #project .pj-title .title .num{display: block; width: 100%;}
     #project .pj-title .sub{font-size: 1.8rem;}
 
@@ -312,7 +312,7 @@ body.on{background: #000; color: #fff;}
     #project .pj-info .lan{display: none;}
     #project .pj-planet{height: 65%; padding: 47% 0; background-size: 80%;}
     #project .pj-planet .pj-link{width: 23rem; height: 23rem; right: 23%;}
-    #project .pj-title .title{font-size: 5.5rem;}
+    #project .pj-title .title a{font-size: 5.5rem;}
     #project .pj-title .title .num{font-size: 2rem;}
 
     #contact .contact{font-size: 7rem; padding-left: 12%;}
@@ -336,7 +336,7 @@ body.on{background: #000; color: #fff;}
 
     #project .pj-planet{padding: 50% 0;}
     #project .pj-planet .pj-link{width: 21rem; height: 21rem; right: 20%;}
-    #project .pj-title .title{font-size: 5rem;}
+    #project .pj-title .title a{font-size: 5rem;}
 
     #contact .contact{font-size: 6.5rem; padding-left: 5%;}
     #contact .info-t{padding-right: 12%;}
